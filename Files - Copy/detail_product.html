@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="swiper/css/swiper.min.css">
+        
+        <link rel="stylesheet" href="assets/css/demo.css">
+        <link rel="stylesheet" href="assets/css/style_common.css">
+        <link rel="stylesheet" href="assets/css/style4.css">
+        <link rel="stylesheet" href="assets/css/style5.css">
+        <link rel="stylesheet" href="assets/css/style7.css">
+        <link rel="stylesheet" href="assets/css/style10.css">
+
+    <title>Chi Tiết Sản Phẩm</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+        }
+
+        .product-details {
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-details img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .thumbnail-images {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .thumbnail-images img {
+            max-width: 60px;
+            height: auto;
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .thumbnail-images img:last-child {
+            margin-right: 0;
+        }
+
+        .star-rating input {
+            display: none;
+        }
+
+        .star-rating label {
+            font-size: 30px;
+            color: #ddd;
+            cursor: pointer;
+        }
+
+        .star-rating input:checked ~ label {
+            color: #f8d63e;
+        }
+
+        .quantity-input {
+            width: 70px;
+            text-align: center;
+        }
+
+        .btn-add-to-cart1 {
+            background-color: #FF3300	;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .btn-add-to-cart2 {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-1">
+            <a href="#" class="logo"><i class=" fa fa-shopping-bag"></i> shopping</a>
+            <div class="form-container">
+                <form action="">
+                    <input type="search" placeholder="search..." id="search">
+                    <label for="search" class="fa fa-search"></label>
+                </form>
+            </div>
+        </div>
+        <!--header-1-->
+        <div class="header-2">
+            <div id="menu" class="fa fa-bars"></div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="Product.html">Product</a></li>
+                    <li><a href="#">Featured</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Deal</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="#" class="fa fa-heart"></a>
+                <a href="#" class="fa fa-shopping-cart"></a>
+                <a href="#" class="fa fa-user"></a>
+            </div>
+        </div>
+    </header>
+    <!-- Phần chi tiết sản phẩm -->
+    <div class="container product-details">
+        <h1 class="text-center text-dark">Tên Sản Phẩm</h1>
+
+        <!-- Carousel hiển thị ảnh sản phẩm -->
+        <div id="imageCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://vienthongvina.net/uploads/noidung/capmanglan-duc-san-dintek-cat6a-utp-3met-patch-cord-utpcat6a10gb-dintek-3m-0-196.jpg" alt="Ảnh Sản Phẩm 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://vienthongvina.net/uploads/noidung/capmanglan-duc-san-dintek-cat6a-utp-3met-patch-cord-utpcat6a10gb-dintek-3m-0-196.jpg" alt="Ảnh Sản Phẩm 2">
+                </div>
+                <!-- Thêm các carousel item khác cho ảnh phụ -->
+            </div>
+            <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Trước</span>
+            </a>
+            <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Tiếp Theo</span>
+          </a>
+        </div>
+
+        <!-- Danh sách ảnh nhỏ -->
+        <div class="thumbnail-images" id="thumbnailImages">
+            <!-- Ảnh nhỏ sẽ được thêm động ở đây bằng JavaScript -->
+        </div>
+
+        <!-- Thông tin sản phẩm -->
+        <h2>Thông tin Sản Phẩm</h2>
+<div>
+    <h4>Mô tả sản phẩm:</h4>
+    <p>Cáp mạng Ugreen CAT6 NW102 20160 dài 2m có khả năng truyền dẫn tốt và ổn định đạt 10Gbps. Hơn nữa, phụ kiện Ugreen này được làm từ vật liệu đạt chuẩn chất lượng cùng thiết kế đầu kết nối dẹp dễ dàng đi dây.</p>
+</div>
+
+<div class="d-flex align-items-center">
+    <h5 class="mr-2">Hãng:</h5>
+    <p>Hãng sản xuất</p>
+</div>
+
+<div class="d-flex align-items-center">
+    <h5 class="mr-2">Giá:</h5>
+    <p>$99.99</p>
+</div>
+
+        <!-- Ô chọn số lượng và nút thêm vào giỏ hàng -->
+        <label for="quantity">Số Lượng:</label>
+        <input type="number" id="quantity" name="quantity" value="1" class="quantity-input">
+        <button class="btn btn-add-to-cart1">Mua Ngay</button>
+        <button class="btn btn-add-to-cart2">Thêm vào giỏ hàng</button>
+        <!-- Đánh giá sao của sản phẩm -->
+        <h3>Đánh Giá:</h3>
+        <div class="star-rating">
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">☆</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">☆</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">☆</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">☆</label>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">☆</label>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS và Popper.js (cần thiết cho Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript để thêm ảnh nhỏ và chuyển đổi Carousel -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Mảng chứa đường link của ảnh nhỏ
+            var thumbnailImages = ["https://vienthongvina.net/uploads/noidung/capmanglan-duc-san-dintek-cat6a-utp-3met-patch-cord-utpcat6a10gb-dintek-3m-0-196.jpg", "https://vienthongvina.net/uploads/noidung/capmanglan-duc-san-dintek-cat6a-utp-3met-patch-cord-utpcat6a10gb-dintek-3m-0-196.jpg"];
+
+            // Lấy phần tử chứa ảnh nhỏ
+            var thumbnailContainer = document.getElementById("thumbnailImages");
+
+            // Tạo và thêm động ảnh nhỏ vào phần tử
+            thumbnailImages.forEach(function (thumbnail, index) {
+                var img = document.createElement("img");
+                img.src = thumbnail;
+                img.alt = "Ảnh nhỏ " + (index + 1);
+                img.dataset.target = "#imageCarousel";
+                img.dataset.slideTo = index;
+                img.className = "thumbnail";
+                img.addEventListener("click", function () {
+                    // Kích hoạt item tương ứng trong Carousel khi click vào ảnh nhỏ
+                    $('#imageCarousel').carousel(index);
+                });
+                thumbnailContainer.appendChild(img);
+            });
+        });
+    </script>
+
+<section class="news">
+    <h1>News Letter</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <form action="">
+        <input type="email" placeholder="Pleas Enter Your Email">
+        <input type="submit" class="btn">
+    </form>
+</section>
+
+ <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer-top__box">
+          <h3>EXTRAS</h3>
+          <a href="#">Brands</a>
+          <a href="#">Gift Certificates</a>
+          <a href="#">Affiliate</a>
+          <a href="#">Specials</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>INFORMATION</h3>
+          <a href="#">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>MY ACCOUNT</h3>
+          <a href="#">My Account</a>
+          <a href="#">Order History</a>
+          <a href="#">Wish List</a>
+          <a href="#">Newsletter</a>
+          <a href="#">Returns</a>
+        </div>
+        
+        <div class="footer-top__box">
+          <h3>CONTACT US</h3>
+          <div>
+            <span>
+                <svg>
+                    <i class="fa fa-home"></i>
+                </svg>
+            </span>
+            43 Dream House, Dreammy street
+          </div>
+          <div>
+            <span>
+              <svg>
+                <i class="fa fa-envelope-open"></i>
+              </svg>
+            </span>
+            company@gmail.com
+          </div>
+          <div>
+            <span>
+              <svg>
+                <i class="fa fa-phone"></i>
+              </svg>
+            </span>
+            456-456-4512
+          </div>
+          <div>
+            <span>
+              <svg>
+                <i class="fa fa-map-marker"></i>
+              </svg>
+            </span>
+            Dream City, USA
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+ </footer>
+</body>
+</html>
