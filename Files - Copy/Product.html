@@ -28,10 +28,10 @@
             <div id="menu" class="fa fa-bars"></div>
             <nav class="navbar">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="Index.html">Home</a></li>
                     <li><a href="Product.html">Product</a></li>
-                    <li><a href="#">Featured</a></li>
-                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">data</a></li>
+                    <li><a href="#">installation service</a></li>
                     <li><a href="#">Deal</a></li>
                 </ul>
             </nav>
@@ -42,14 +42,56 @@
             </div>
         </div>
     </header>
+    <!--End Of Header-->
+    <section class="home swiper-container" id="home">
+        <div class="home-slider swiper-wrapper">
+            <div class="item swiper-slide">
+                <img src="https://bizweb.dktcdn.net/100/283/279/files/lap-dat-mang-lan-van-phong-ha-noi.jpg?v=1635740364473" alt="">
+                <div class="content">
+                    <h3>Online Shopping</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#"><button class="btn">Shop Now</button></a>
+                </div>
+            </div>
+            <div class="item swiper-slide">
+                <img src="https://vnpt.com.vn/Media/Images/20022023/nhan-vien-lap-dat-cap-quang.jpg" alt="">
+                <div class="content">
+                    <h3>Online Shopping</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#"><button class="btn">Shop Now</button></a>
+                </div>
+            </div>
+            <div class="item swiper-slide">
+                <img src="https://png.pngtree.com/background/20230402/original/pngtree-man-installing-a-fiber-optic-cable-in-a-factory-vector-picture-image_2257185.jpg" alt="">
+                <div class="content">
+                    <h3>Online Shopping</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#"><button class="btn">Shop Now</button></a>
+                </div>
+            </div>
+            <div class="item swiper-slide">
+                <img src="https://mangnoibo.com/uploads/images/thi-cong-mang-lan-2.jpg" alt="">
+                <div class="content">
+                    <h3>Online Shopping</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#"><button class="btn">Shop Now</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </section>
+    <!--End Of Home Section-->
+
     <section class="gallery" id="gallery">
-        <h1 class="heading"><span>gallery</span></h1>
+        <h1 class="heading"><span>Products</span></h1>
         <ul class="controls">
             <li class="btn active" data-filter="all">all</li>
             <li class="btn" data-filter="shoes">shoes</li>
             <li class="btn" data-filter="jacket">jacket</li>
             <li class="btn" data-filter="mobile">mobile</li>
-            <li class="btn" data-filter="watch">watch</li>
+            <li class="btn" data-filter="watch">installation</li>
         </ul>
         <div class="image-container">
             <div class="box shoes">
@@ -355,7 +397,50 @@
         </div>
     </section>
 
-
+    <section class="service" id="service">
+        <h1 class="heading"><span>Best Service</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="https://img.freepik.com/free-vector/hand-holding-phone-with-digital-wallet-service-sending-money-payment-transaction-transfer-through-mobile-app-flat-illustration_74855-20589.jpg?size=626&ext=jpg&ga=GA1.1.632798143.1705622400&semt=ais" alt="Resized Image" width="300" height="auto">
+                <div class="content">
+                    <h1>Easy Payment</h1>
+                    <p>Upto 39% off on first purchase</p>
+                    <a href="#"><button class="btn">Explore</button></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://img.freepik.com/free-vector/gradient-our-services-labels-collection_23-2149979887.jpg" alt="">
+                <div class="content">
+                    <h1>Fast Service</h1>
+                    <p>Online Service</p>
+                    <a href="#"><button class="btn">Explore</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icons">
+                <i class="fa fa-plane"></i>
+                <h3>Fast Delivery</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, dolores velit.</p>
+            </div>
+            <div class="icons">
+                <i class="fa fa-user-plus"></i>
+                <h3>Strong Support</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, dolores velit.</p>
+            </div>
+            <div class="icons">
+                <i class="fa fa-id-card-o"></i>
+                <h3>Easy Payment</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, dolores velit.</p>
+            </div>
+            <div class="icons">
+                <i class="fa fa-shopping-bag"></i>
+                <h3>Fast Shop</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, dolores velit.</p>
+            </div>
+        </div>
+    </section>
+    <!--End Of Service Section-->
     <section class="news">
         <h1>News Letter</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -364,8 +449,8 @@
             <input type="submit" class="btn">
         </form>
     </section>
-    
-     <footer id="footer" class="section footer">
+    <!--End Of News Letter-->
+    <footer id="footer" class="section footer">
         <div class="container">
           <div class="footer__top">
             <div class="footer-top__box">
@@ -431,6 +516,44 @@
           </div>
         </div>
         </div>
-     </footer>
+    </footer>
 </body>
 </html>
+
+<script src="js/jquery.js"></script>
+<script src="js/script.js"> </script>
+<script src="swiper/js/swiper.min.js"></script>
+<script>
+
+$(document).ready(function () {
+    $('.btn').click(function () {
+        const value = $(this).attr('data-filter');
+        if (value == 'all') {
+            $('.box').show('1000');
+        } else {
+            $('.box').not('.' + value).hide('1000');
+            $('.box').filter('.' + value).show('1000');
+        }
+    })
+
+    $('.btn').click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+    })
+});
+
+var swiper = new Swiper('.swiper-container', {
+    autoplay:{
+        delay:5000,
+        disableOnInteraction:false,
+    },
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable:true,
+  },
+
+  navigation :{
+      nextEl:'.swiper-button-next',
+      prevEl:'.swiper-button-prev',
+  }
+});
