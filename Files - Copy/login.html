@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="swiper/css/swiper.min.css">
+    
+    <link rel="stylesheet" href="assets/css/demo.css">
+    <link rel="stylesheet" href="assets/css/style_common.css">
+    <link rel="stylesheet" href="assets/css/style4.css">
+    <link rel="stylesheet" href="assets/css/style5.css">
+    <link rel="stylesheet" href="assets/css/style7.css">
+    <link rel="stylesheet" href="assets/css/style10.css">
+</head>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: block; /* Change display to block by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="header-1">
+            <a href="#" class="logo"><i class=" fa fa-shopping-bag"></i> shopping</a>
+            <div class="form-container">
+                <form action="">
+                    <input type="search" placeholder="search..." id="search">
+                    <label for="search" class="fa fa-search"></label>
+                </form>
+            </div>
+        </div>
+        <!--header-1-->
+        <div class="header-2">
+            <div id="menu" class="fa fa-bars"></div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Product.html">Product</a></li>
+                    <li><a href="Featured.html">Featured</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Deal.html">Deal</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="#" class="fa fa-heart"></a>
+                <a href="cart2.html" class="fa fa-shopping-cart"></a>
+                <a href="login.html" class="fa fa-user"></a>
+            </div>
+        </div>
+    </header>
+    <!--End Of Header-->
+    <section class="home swiper-container" id="home">
+        <div class="home-slider swiper-wrapper">
+            <div class="item swiper-slide">
+                <img src="image/slider/1.jpg" alt="">
+                <div class="content">
+                    <h3>Online Shopping</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#"><button class="btn">Shop Now</button></a>
+                </div>
+            </div>
+            <div class="item swiper-slide">
+                <img src="image/slider/2.jpg" alt="">
+                <div class="content">
+                    <h3>Online Shopping</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#"><button class="btn">Shop Now</button></a>
+                </div>
+            </div>
+            <div class="item swiper-slide">
+                <img src="image/slider/3.jpg" alt="">
+                <div class="content">
+                    <h3>Online Shopping</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#"><button class="btn">Shop Now</button></a>
+                </div>
+            </div>
+            <div class="item swiper-slide">
+                <img src="image/slider/4.jpg" alt="">
+                <div class="content">
+                    <h3>Online Shopping</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#"><button class="btn">Shop Now</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </section>
+    <!--End Of Home Section-->
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2023/07/hinh-dep-5.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer-top__box">
+          <h3>EXTRAS</h3>
+          <a href="#">Brands</a>
+          <a href="#">Gift Certificates</a>
+          <a href="#">Affiliate</a>
+          <a href="#">Specials</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>INFORMATION</h3>
+          <a href="#">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>MY ACCOUNT</h3>
+          <a href="#">My Account</a>
+          <a href="#">Order History</a>
+          <a href="#">Wish List</a>
+          <a href="#">Newsletter</a>
+          <a href="#">Returns</a>
+        </div>
+        
+        <div class="footer-top__box">
+          <h3>CONTACT US</h3>
+          <div>
+            <span>
+                <svg>
+                    <i class="fa fa-home"></i>
+                </svg>
+            </span>
+            43 Dream House, Dreammy street
+          </div>
+          <div>
+            <span>
+              <svg>
+                <i class="fa fa-envelope-open"></i>
+              </svg>
+            </span>
+            company@gmail.com
+          </div>
+          <div>
+            <span>
+              <svg>
+                <i class="fa fa-phone"></i>
+              </svg>
+            </span>
+            456-456-4512
+          </div>
+          <div>
+            <span>
+              <svg>
+                <i class="fa fa-map-marker"></i>
+              </svg>
+            </span>
+            Dream City, USA
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</footer>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Open the modal by default
+document.getElementById('id01').style.display='block';
+</script>
+
+</body>
+</html>
