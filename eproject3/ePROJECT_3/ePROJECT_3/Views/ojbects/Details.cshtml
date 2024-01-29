@@ -1,0 +1,27 @@
+﻿@model ePROJECT_3.Models.ojbect
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ojbect</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ojbectName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ojbectName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ojbectID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

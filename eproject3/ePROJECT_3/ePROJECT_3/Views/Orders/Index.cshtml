@@ -1,0 +1,88 @@
+﻿@model IEnumerable<ePROJECT_3.Models.Order>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderFristDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.delivered)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.deliveredDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Discount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Employee_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.payId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.storeID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderEndDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrderFristDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.delivered)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.deliveredDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Discount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Employee_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.payId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.storeID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrderEndDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.OrderID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.OrderID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.OrderID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,27 @@
+﻿@model ePROJECT_3.Models.Pay
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Pay</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.payName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.payName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.payId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
