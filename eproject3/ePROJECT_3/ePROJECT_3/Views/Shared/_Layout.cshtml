@@ -1,7 +1,7 @@
 ﻿<html>
 <head>
     <link rel="stylesheet" href="~/Content/css//style.css">
-    <link rel="stylesheet" href="font-awesome-4.7.0/~/Content/css//font-awesome.css">
+    <link rel="stylesheet" href="~/Content/css//font-awesome.css">
     <link rel="stylesheet" href="~/Content/css/swiper.min.css">
 
     <link rel="stylesheet" href="~/Content/assets/css//demo.css">
@@ -27,8 +27,8 @@
             <div id="menu" class="fa fa-bars"></div>
             <nav class="navbar">
                 <ul>
-                    <li><a href="Index.html">Home</a></li>
-                    <li><a href="Product.html">Product</a></li>
+                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Products", "Index", "Products_public", new { area = "" }, new { @class = "nav-link" })</li>
                     <li><a href="#">data</a></li>
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">Deal</a></li>

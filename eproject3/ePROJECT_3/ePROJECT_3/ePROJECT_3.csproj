@@ -139,6 +139,7 @@
     <Compile Include="Controllers\admin\ProductsController.cs" />
     <Compile Include="Controllers\admin\ProductServiesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\publicWeb\Products_publicController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -344,10 +345,13 @@
     <Content Include="Views\ProductServies\Details.cshtml" />
     <Content Include="Views\ProductServies\Edit.cshtml" />
     <Content Include="Views\ProductServies\Index.cshtml" />
+    <Content Include="Views\Products_public\Create.cshtml" />
+    <Content Include="Views\Products_public\Delete.cshtml" />
+    <Content Include="Views\Products_public\Details.cshtml" />
+    <Content Include="Views\Products_public\Edit.cshtml" />
+    <Content Include="Views\Products_public\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\publicWeb\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
     <Content Include="Content\bootstrap.rtl.css.map" />
