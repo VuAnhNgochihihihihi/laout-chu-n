@@ -196,6 +196,19 @@
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\assets\css\demo.css" />
+    <Content Include="Content\assets\css\reset.css" />
+    <Content Include="Content\assets\css\style1.css" />
+    <Content Include="Content\assets\css\style10.css" />
+    <Content Include="Content\assets\css\style2.css" />
+    <Content Include="Content\assets\css\style3.css" />
+    <Content Include="Content\assets\css\style4.css" />
+    <Content Include="Content\assets\css\style5.css" />
+    <Content Include="Content\assets\css\style6.css" />
+    <Content Include="Content\assets\css\style7.css" />
+    <Content Include="Content\assets\css\style8.css" />
+    <Content Include="Content\assets\css\style9.css" />
+    <Content Include="Content\assets\css\style_common.css" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -212,6 +225,12 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\css\font-awesome.css" />
+    <Content Include="Content\css\font-awesome.min.css" />
+    <Content Include="Content\css\index.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\css\swiper.css" />
+    <Content Include="Content\css\swiper.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -248,6 +267,12 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js\jquery.js" />
+    <Content Include="Scripts\js\script.js" />
+    <Content Include="Scripts\js\swiper.esm.bundle.js" />
+    <Content Include="Scripts\js\swiper.esm.js" />
+    <Content Include="Scripts\js\swiper.js" />
+    <Content Include="Scripts\js\swiper.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -263,6 +288,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\js\swiper.min.js.map" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
