@@ -331,43 +331,43 @@
             </div>
         </div>
     </section>
-    </body>
-    </html>
-    <script src="~/Scripts/js/jquery.js"></script>
-    <script src="~/Scripts/js/script.js"></script>
-    <script src="~/Scripts/js/swiper.min.js"></script>
-    <script>
+</body>
+</html>
+<script src="~/Scripts/js/jquery.js"></script>
+<script src="~/Scripts/js/script.js"></script>
+<script src="~/Scripts/js/swiper.min.js"></script>
+<script>
 
-        $(document).ready(function () {
-            $('.btn').click(function () {
-                const value = $(this).attr('data-filter');
-                if (value == 'all') {
-                    $('.box').show('1000');
-                } else {
-                    $('.box').not('.' + value).hide('1000');
-                    $('.box').filter('.' + value).show('1000');
-                }
-            })
-
-            $('.btn').click(function () {
-                $(this).addClass('active').siblings().removeClass('active');
-            })
-        });
-
-        var swiper = new Swiper('.swiper-container', {
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+    $(document).ready(function () {
+        $('.btn').click(function () {
+            const value = $(this).attr('data-filter');
+            if (value == 'all') {
+                $('.box').show('1000');
+            } else {
+                $('.box').not('.' + value).hide('1000');
+                $('.box').filter('.' + value).show('1000');
             }
-        });
-    </script>
+        })
+
+        $('.btn').click(function () {
+            $(this).addClass('active').siblings().removeClass('active');
+        })
+    });
+
+    var swiper = new Swiper('.swiper-container', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
+</script>

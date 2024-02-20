@@ -330,9 +330,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\viewAdmin\Home\About.cshtml" />
-    <Content Include="Views\viewAdmin\Home\Contact.cshtml" />
-    <Content Include="Views\viewAdmin\Home\Index.cshtml" />
     <Content Include="Scripts\js\swiper.min.js.map" />
     <Content Include="Views\viewAdmin\Brands\Create.cshtml" />
     <Content Include="Views\viewAdmin\Brands\Delete.cshtml" />
@@ -379,12 +376,12 @@
     <Content Include="Views\viewAdmin\ProductServies\Details.cshtml" />
     <Content Include="Views\viewAdmin\ProductServies\Edit.cshtml" />
     <Content Include="Views\viewAdmin\ProductServies\Index.cshtml" />
-    <Content Include="Views\Products_public\Create.cshtml" />
-    <Content Include="Views\Products_public\Delete.cshtml" />
     <Content Include="Views\Products_public\Details.cshtml" />
-    <Content Include="Views\Products_public\Edit.cshtml" />
     <Content Include="Views\Products_public\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutCustomers.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
