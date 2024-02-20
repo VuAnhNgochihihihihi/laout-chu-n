@@ -21,5 +21,6 @@ namespace ePROJECT_3.Models
         public string Address { get; set; }
         public byte[] created_at { get; set; }
         public string customerName { get; set; }
+        public bool Remember { get; set; }
     }
 }

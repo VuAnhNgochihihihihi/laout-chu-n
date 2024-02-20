@@ -130,6 +130,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\admin\BrandsController.cs" />
+    <Compile Include="Controllers\admin\CustomerController.cs" />
+    <Compile Include="Controllers\admin\EmplooyeeController.cs" />
     <Compile Include="Controllers\admin\GroupsController.cs" />
     <Compile Include="Controllers\admin\ojbectsController.cs" />
     <Compile Include="Controllers\admin\OrdersController.cs" />
@@ -385,6 +387,16 @@
     <Content Include="Views\Products_public\Edit.cshtml" />
     <Content Include="Views\Products_public\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutCustomers.cshtml" />
+    <Content Include="Views\Customer\Create.cshtml" />
+    <Content Include="Views\Customer\Delete.cshtml" />
+    <Content Include="Views\Customer\Details.cshtml" />
+    <Content Include="Views\Customer\Edit.cshtml" />
+    <Content Include="Views\Customer\Index.cshtml" />
+    <Content Include="Views\Emplooyee\Create.cshtml" />
+    <Content Include="Views\Emplooyee\Delete.cshtml" />
+    <Content Include="Views\Emplooyee\Details.cshtml" />
+    <Content Include="Views\Emplooyee\Edit.cshtml" />
+    <Content Include="Views\Emplooyee\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
