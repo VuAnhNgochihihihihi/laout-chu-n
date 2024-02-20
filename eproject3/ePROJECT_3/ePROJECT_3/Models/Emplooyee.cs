@@ -22,5 +22,6 @@ namespace ePROJECT_3.Models
         public string address { get; set; }
         public Nullable<int> phone_number { get; set; }
         public byte[] created_at { get; set; }
+        public bool Remember { get; set; } 
     }
 }

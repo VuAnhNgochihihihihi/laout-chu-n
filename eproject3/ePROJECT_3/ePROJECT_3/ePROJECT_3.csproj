@@ -130,6 +130,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\admin\BrandsController.cs" />
+    <Compile Include="Controllers\admin\CustomerController.cs" />
+    <Compile Include="Controllers\admin\EmplooyeeController.cs" />
     <Compile Include="Controllers\admin\GroupsController.cs" />
     <Compile Include="Controllers\admin\ojbectsController.cs" />
     <Compile Include="Controllers\admin\OrdersController.cs" />
@@ -330,6 +332,9 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\viewAdmin\Home\About.cshtml" />
+    <Content Include="Views\viewAdmin\Home\Contact.cshtml" />
+    <Content Include="Views\viewAdmin\Home\Index.cshtml" />
     <Content Include="Scripts\js\swiper.min.js.map" />
     <Content Include="Views\viewAdmin\Brands\Create.cshtml" />
     <Content Include="Views\viewAdmin\Brands\Delete.cshtml" />
@@ -376,12 +381,22 @@
     <Content Include="Views\viewAdmin\ProductServies\Details.cshtml" />
     <Content Include="Views\viewAdmin\ProductServies\Edit.cshtml" />
     <Content Include="Views\viewAdmin\ProductServies\Index.cshtml" />
+    <Content Include="Views\Products_public\Create.cshtml" />
+    <Content Include="Views\Products_public\Delete.cshtml" />
     <Content Include="Views\Products_public\Details.cshtml" />
+    <Content Include="Views\Products_public\Edit.cshtml" />
     <Content Include="Views\Products_public\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutCustomers.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Customer\Create.cshtml" />
+    <Content Include="Views\Customer\Delete.cshtml" />
+    <Content Include="Views\Customer\Details.cshtml" />
+    <Content Include="Views\Customer\Edit.cshtml" />
+    <Content Include="Views\Customer\Index.cshtml" />
+    <Content Include="Views\Emplooyee\Create.cshtml" />
+    <Content Include="Views\Emplooyee\Delete.cshtml" />
+    <Content Include="Views\Emplooyee\Details.cshtml" />
+    <Content Include="Views\Emplooyee\Edit.cshtml" />
+    <Content Include="Views\Emplooyee\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
